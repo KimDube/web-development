@@ -1,10 +1,54 @@
 [
   {
-    "name": "Texas",
-    "species": "Black"
+    "quote": "Be yourself; everyone else is already taken." ,
+    "author": "Oscar Wilde"
   },
   {
-    "name": "Georgia",
-    "species": "Himalayan"
+    "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "author": "Albert Einstein"
+  },
+  {
+    "quote": "So many books, so little time.",
+    "author": "Frank Zappa"
+  },
+    {
+    "quote": "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
+    "author": "Bernard M. Baruch"
+  },
+    {
+    "quote": "A room without books is like a body without a soul.",
+    "author": "Marcus Tullius Cicero"
+  },
+    {
+    "quote": "You only live once, but if you do it right, once is enough.",
+    "author": "Mae West"
+  },
+    {
+    "quote": "In three words I can sum up everything I've learned about life: it goes on",
+    "author": "Robert Frost"
+  },
+    {
+    "quote": "Friendship ... is born at the moment when one man says to another What! You too? I thought that no one but myself . . .",
+    "author": "C. S. Lewis"
+  },
+    {
+    "quote": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt"
+  },
+    {
+    "quote": "If you tell the truth, you don't have to remember anything.",
+    "author": "Mark Twain"
+  },
+    {
+    "quote": "Always forgive your enemies; nothing annoys them so much.",
+    "author": "Oscar Wilde"
+  },
+    {
+    "quote": "To live is the rarest thing in the world. Most people exist, that is all.",
+    "author": "Oscar Wilde"
+  },
+    {
+    "quote": "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.",
+    "author": "Martin Luther King Jr."
   }
 ]
