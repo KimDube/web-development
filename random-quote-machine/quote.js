@@ -4,7 +4,7 @@ var htmlstr = "";
 
 function getQuote() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://kimdube.github.io/web-development/quotes.json');
+    ourRequest.open('GET', 'https://kimdube.github.io/web-development/random-quote-machine/quotes.json');
     ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
