@@ -1,0 +1,124 @@
+// Etch a sketch 
+// The Odin Project
+// Kimberlee Dube
+// November 25, 2017
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+function createGrid(dim) {
+  var $row = $("<div />", {
+      class: 'row'
+    });
+    var $square = $("<div />", {
+      class: 'square'
+    });
+  
+    //add columns to intial row
+    for (var i = 0; i < dim; i++) {
+        $row.append($square.clone());
+    }
+    //copy row appropriate num times
+    for (var i = 0; i < dim; i++) {
+        $("#container").append($row.clone());
+    }
+    
+    // fit rows to container
+    $(".square").width(640/dim);
+    $(".square").height(640/dim);
+}
+
+function clearScreen(){
+    $(".square").remove();
+};  
+
+function newSize(){
+  var new_dim = prompt("What grid dimension would you like?")
+  clearScreen();
+  createGrid(new_dim);
+  $(".square").mouseover(function() {
+        $(this).css("background-color",         "black");
+        });
+  return new_dim;
+}
+
+$(document).ready(function () {
+    var n = 16;
+    createGrid(n);
+  
+    // Change square colour to black upon mouse over
+    $(".square").mouseover(function() {
+        $(this).css("background-color",         "black");
+        });
+    
+    // If Clear Screen is clicked
+    $(".clearScreen").click(function() {
+        clearScreen();createGrid(n);$(".square").mouseover(function() {
+        $(this).css("background-color",         "black");
+        });});
+  
+      $(".newSize").click(function() {
+        n = newSize();});
+  
+});
+</script>
+</head>
+
+<style>
+#container {
+    width: 640px;
+    height: 640px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+    border: 20px solid;
+    border-radius: 20px;
+}
+.row {
+    width: auto;
+    background: #313131;
+}
+.square {
+    margin: 0px;
+    outline: 1px solid;
+    display: inline-block;
+    float: left;
+    background: #FFFFFF;
+}
+body {
+    background-color:	#BC3041;
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: "Helvetica";
+}
+.button {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.button:hover {background-color: #555555}
+
+.button:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<body>
+  <center>
+  <h1>Etch-a-Sketch</h1>
+ <input type="button" class="button clearScreen" value="Clear Screen">
+     <input type="button" class="button newSize" value="New Grid Size">
+  </center>
+  <div id="container"></div>
+</body>
