@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" );
+
+body {
+  color: black;
+  padding-top: 50px;
+  padding-left: 50px;
+  background-image: url("http://www.sepeb.com/blue-background-wallpapers/blue-background-wallpapers-004.jpg");
+}
+
+.btn{
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 18x;
+  border-style: solid;
+  border-color: #5f89ce;
+  margin: auto;
+  width: 17%;
+}
+
+.btn:focus{
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: #5f89ce;
+}
+
+.btn:hover {
+    background-color: #425b84;
+    color: white;
+}
+
+
+#quote-info{
+  font-family: "Abril Fatface";
+  font-size: 48px;
+  padding-bottom: 30px;
+  width: 66%;
+}
