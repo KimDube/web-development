@@ -9,6 +9,8 @@
 <h1>ROCK! PAPER! SCISSORS!</h1>
 <h3>Open your browser console (developer tools) to play.</h3>
 
+<div> <button id="readybtn" class="btn"> <b>Ready!</b> </button></div>
+
 <script>
 function computer_play() {
 	var options = ['rock', 'paper', 'scissors'];
@@ -87,8 +89,11 @@ function game() {
 	return "Final Result: Draw!"
 };
 
-var input = prompt("rock, paper, or scissors?");
-console.log(game());
+readybtn.addEventListener("click", function() {
+	var input = prompt("rock, paper, or scissors?");
+	console.log(game());
+});
+
 </script>
 
 </body>
