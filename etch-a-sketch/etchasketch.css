@@ -15,7 +15,7 @@
 }
 .square {
     margin: 0px;
-    outline: 1px solid;
+
     display: inline-block;
     float: left;
     background: #FFFFFF;
